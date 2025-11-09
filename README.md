@@ -7,6 +7,14 @@ It allows users to instantly generate and preview professional resumes — compl
 
 ---
 
+🚀 Live Demo
+
+👉 Click here to view the live projects 
+
+(https://roshinivankela.github.io/Image-Slider/)
+
+---
+
 ## ✨ Features
 - 🧠 **AI-powered resume generation**
 - ⚡ Real-time live preview
