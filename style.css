@@ -1,0 +1,176 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+}
+
+.form-section,
+.preview-section {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  transition: 0.3s;
+}
+
+.form-section:hover,
+.preview-section:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== FORM ===== */
+h2 {
+  color: #2563eb;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+/* ===== BUTTONS ===== */
+button {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background: #1e40af;
+}
+
+.btn-secondary {
+  background: #111827;
+  color: white;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.btn-secondary:hover {
+  background: #2563eb;
+}
+
+/* ===== RESUME PREVIEW ===== */
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.resume-preview {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-height: 400px;
+}
+
+.resume-preview h2 {
+  color: #111827;
+  margin-bottom: 0.3rem;
+}
+.resume-preview h3 {
+  color: #2563eb;
+  margin-top: 1rem;
+}
+.resume-preview ul {
+  margin-left: 1rem;
+  list-style: disc;
+}
+.resume-preview .placeholder {
+  color: #9ca3af;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-section,
+  .preview-section {
+    max-width: 100%;
+  }
+}

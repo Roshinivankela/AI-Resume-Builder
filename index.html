@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="hero">
+    <h1>🤖 AI Resume Builder</h1>
+    <p>Create a professional resume in seconds — powered by AI.</p>
+  </header>
+
+  <main class="main-container">
+    <!-- ==== Left Form ==== -->
+    <section class="form-section">
+      <h2>Enter Your Information</h2>
+      <form id="resumeForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Roji" required />
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="Roji@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label>Job Title</label>
+          <input type="text" id="jobTitle" placeholder="Software Developer" required />
+        </div>
+
+        <div class="form-group">
+          <label>Experience</label>
+          <textarea id="experience" rows="4" placeholder="Describe your experience..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Skills</label>
+          <input type="text" id="skills" placeholder="HTML, CSS, JavaScript" />
+        </div>
+
+        <button type="button" id="generateBtn" class="btn-primary">✨ Generate with AI</button>
+      </form>
+    </section>
+
+    <!-- ==== Right Resume Preview ==== -->
+    <section class="preview-section">
+      <div class="preview-header">
+        <h2>Resume Preview</h2>
+        <button id="downloadBtn" class="btn-secondary">📄 Download PDF</button>
+      </div>
+      <div id="resumePreview" class="resume-preview">
+        <p class="placeholder">Fill out the form and click <strong>"Generate with AI"</strong> to see your resume.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AI Resume Builder. Crafted with Roji for professionals.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
